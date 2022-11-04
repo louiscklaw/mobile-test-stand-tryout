@@ -1,0 +1,21 @@
+{
+  "name": "mobile-test-stand-tryout",
+  "version": "1.0.0",
+  "description": "https://www.thingiverse.com/thing:1471349",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gitUpdate": "git add . ; git commit -m=\"update,\" ; git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louiscklaw/mobile-test-stand-tryout.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louiscklaw/mobile-test-stand-tryout/issues"
+  },
+  "homepage": "https://github.com/louiscklaw/mobile-test-stand-tryout#readme"
+}
