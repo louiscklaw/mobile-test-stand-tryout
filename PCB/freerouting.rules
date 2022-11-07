@@ -1,0 +1,194 @@
+
+(rules PCB freerouting
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 212)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 2000.0)
+    (clear 200.0)
+    (clear 1000.0 (type smd_to_turn_gap))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_2000:400_um"
+    (shape
+      (circle F.Cu 2000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_3000:400_um"
+    (shape
+      (circle F.Cu 3000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 3000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_2000:400_um" "Via[0-1]_2000:400_um" default
+  )
+  (via 
+    "Via[0-1]_3000:400_um" "Via[0-1]_3000:400_um" default
+  )
+  (via 
+    "Via[0-1]_2000:400_um-kicad_default" "Via[0-1]_2000:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_3000:400_um-kicad_default" "Via[0-1]_3000:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-12V" "Via[0-1]_800:400_um" 12V
+  )
+  (via 
+    "Via[0-1]_2000:400_um-12V" "Via[0-1]_2000:400_um" 12V
+  )
+  (via 
+    "Via[0-1]_3000:400_um-12V" "Via[0-1]_3000:400_um" 12V
+  )
+  (via 
+    "Via[0-1]_800:400_um-3V3" "Via[0-1]_800:400_um" 3V3
+  )
+  (via 
+    "Via[0-1]_2000:400_um-3V3" "Via[0-1]_2000:400_um" 3V3
+  )
+  (via 
+    "Via[0-1]_3000:400_um-3V3" "Via[0-1]_3000:400_um" 3V3
+  )
+  (via 
+    "Via[0-1]_800:400_um-5V" "Via[0-1]_800:400_um" 5V
+  )
+  (via 
+    "Via[0-1]_2000:400_um-5V" "Via[0-1]_2000:400_um" 5V
+  )
+  (via 
+    "Via[0-1]_3000:400_um-5V" "Via[0-1]_3000:400_um" 5V
+  )
+  (via 
+    "Via[0-1]_800:400_um-GND" "Via[0-1]_800:400_um" GND
+  )
+  (via 
+    "Via[0-1]_2000:400_um-GND" "Via[0-1]_2000:400_um" GND
+  )
+  (via 
+    "Via[0-1]_3000:400_um-GND" "Via[0-1]_3000:400_um" GND
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    12V "Via[0-1]_2000:400_um-12V"
+  )
+  (via_rule
+    3V3 "Via[0-1]_2000:400_um-3V3"
+  )
+  (via_rule
+    5V "Via[0-1]_2000:400_um-5V"
+  )
+  (via_rule
+    GND "Via[0-1]_3000:400_um-GND"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    "unconnected-(J1-Pad20)" /3V3 GND /5V "/PWR_OK" "/5V_SB" /12V "/-12V"
+    "/PS_ON" "Net-(D1-Pad1)" "Net-(D2-Pad1)" "Net-(D3-Pad1)" "Net-(D4-Pad1)" "Net-(D5-Pad1)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 2000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 2000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 12V
+    (clearance_class 12V)
+    (via_rule 12V)
+    (rule
+      (width 1500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 3V3
+    (clearance_class 3V3)
+    (via_rule 3V3)
+    (rule
+      (width 1500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 5V
+    (clearance_class 5V)
+    (via_rule 5V)
+    (rule
+      (width 1500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class GND
+    (clearance_class GND)
+    (via_rule GND)
+    (rule
+      (width 2000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
