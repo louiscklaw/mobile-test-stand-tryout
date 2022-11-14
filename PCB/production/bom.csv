@@ -1,17 +1,17 @@
-Designator,Footprint,Quantity,Value,LCSC Part #
-"D1, D2, D3, D4, D5",D_0805_2012Metric,5,LED,
-FID1,Fiducial_1mm_Mask3mm,1,Fiducial,
-FID2,Fiducial_1.5mm_Mask3mm,1,Fiducial,
-FID3,Fiducial_0.75mm_Mask2.25mm,1,Fiducial,
-"H1, H2, H3, H4",MountingHole_3.2mm_M3_ISO14580,4,MountingHole,
-J1,Molex_Mini-Fit_Jr_5569-24A2_2x12_P4.20mm_Horizontal,1,ATX-24,
-"J10, J11, J3, J7, J8, J9",PinHeader_1x04_P2.54mm_Horizontal,6,Conn_USB_HUBS,
-J12,PinHeader_1x02_P2.54mm_Vertical,1,POWER_ON,
-J2,PinHeader_1x04_P2.54mm_Horizontal,1,Conn_RPi,
-J4,PinHeader_1x04_P2.54mm_Horizontal,1,Conn_Router,
-J5,PinHeader_1x04_P2.54mm_Horizontal,1,Conn_MOBILE,
-J6,PinHeader_1x04_P2.54mm_Horizontal,1,Conn_NUC,
-R1,R_0805_2012Metric,1,R331,
-"R2, R3",R_0805_2012Metric,2,R221,
-"R4, R5",R_0805_2012Metric,2,R102,
-"TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8",PinHeader_1x01_P2.54mm_Vertical,8,TestPoint,
+Designator,Footprint,Quantity,Value,LCSC Part #,taobao link,
+"D1, D2, D3, D4, D5",D_0805_2012Metric,5,LED,,N/A,
+FID1,Fiducial_1mm_Mask3mm,1,Fiducial,,N/A,
+FID2,Fiducial_1.5mm_Mask3mm,1,Fiducial,,N/A,
+FID3,Fiducial_0.75mm_Mask2.25mm,1,Fiducial,,N/A,
+"H1, H2, H3, H4",MountingHole_3.2mm_M3_ISO14580,4,MountingHole,,N/A,
+J1,Molex_Mini-Fit_Jr_5569-24A2_2x12_P4.20mm_Horizontal,1,ATX-24,,https://item.taobao.com/item.htm?id=586680486947,?????5557/5569 4.2MM?????????????????
+"J10, J11, J3, J7, J8, J9",PinHeader_1x04_P2.54mm_Horizontal,6,Conn_USB_HUBS,,https://item.taobao.com/item.htm?id=661768911099,KF2EDG-2.54mm
+J12,PinHeader_1x02_P2.54mm_Vertical,1,POWER_ON,,https://item.taobao.com/item.htm?id=661768911099,KF2EDG-2.54mm
+J2,PinHeader_1x04_P2.54mm_Horizontal,1,Conn_RPi,,https://item.taobao.com/item.htm?id=661768911099,KF2EDG-2.54mm
+J4,PinHeader_1x04_P2.54mm_Horizontal,1,Conn_Router,,https://item.taobao.com/item.htm?id=661768911099,KF2EDG-2.54mm
+J5,PinHeader_1x04_P2.54mm_Horizontal,1,Conn_MOBILE,,https://item.taobao.com/item.htm?id=661768911099,KF2EDG-2.54mm
+J6,PinHeader_1x04_P2.54mm_Horizontal,1,Conn_NUC,,https://item.taobao.com/item.htm?id=661768911099,KF2EDG-2.54mm
+R1,R_0805_2012Metric,1,R331,,,
+"R2, R3",R_0805_2012Metric,2,R221,,,
+"R4, R5",R_0805_2012Metric,2,R102,,,
+"TP1, TP2, TP3, TP4, TP5, TP6, TP7, TP8",PinHeader_1x01_P2.54mm_Vertical,8,TestPoint,,N/A,
