@@ -2354,7 +2354,7 @@
   (gr_text "Louislabs\nATX-power distribution board\nlouiscklaw.github.io" (at 53 83) (layer "F.Cu") (tstamp 3406278d-5ee5-4ef2-86c4-4a8156c6bb53)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
-  (gr_text "TODO (REV 1):\n\n1. move green terminal nearer to board edge" (at 194 25) (layer "B.Cu") (tstamp e38eacaa-db3c-4404-af79-f1fd08dc379a)
+  (gr_text "TODO (REV 1):\n\n1. move green terminal nearer to board edge\n2. make testpoints to 2.54 headers" (at 194 25) (layer "B.Cu") (tstamp e38eacaa-db3c-4404-af79-f1fd08dc379a)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (gr_text "PS_ON" (at 64.5 49.5) (layer "F.SilkS") (tstamp 0cdcbcfc-6122-4376-baf7-2489e938b097)
